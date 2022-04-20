@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var sa = ViewBag.ServerA;
+    var sb = ViewBag.ServerB;
+    var sc = ViewBag.ServerC;
+}
+
+<div class="text-center">
+    <h1 class="display-4">当前服务模块</h1>
+
+    <h3>服务名：@sa.name</h3>
+    <p>当前IP：@sa.ip</p>
+    <p>当前端口：@sa.port</p>
+
+    <h3>服务名：@sb.name</h3>
+    <p>当前IP：@sb.ip</p>
+    <p>当前端口：@sb.port</p>
+
+    <h3>服务名：@sc.name</h3>
+    <p>当前IP：@sc.ip</p>
+    <p>当前端口：@sc.port</p>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
